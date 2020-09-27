@@ -288,7 +288,7 @@
     padding-top: 44px;
     position: relative;
     margin-bottom: 22px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
 
     &::before {
       content: "";
@@ -757,6 +757,10 @@
     &:focus {
       outline: 3px solid $color-primary;
       background-color: $color-white;
+    }
+
+    &:invalid {
+      background-color: rgba(#edb5b5, 0.5);
     }
   }
   &__input[name="contact-form__message"] {
