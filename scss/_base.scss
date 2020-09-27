@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Gilroy - Extra Bold";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Gilroy - Extra Bold"),
+    /* Если не получилось, загрузит woff2 */
+      url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+      url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Gilroy"), url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans"), url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+}
+
+//VARIABLES
+$color-primary: #f0c52e;
+$color-primary-light: #f7e296;
+$color-primary-light-2: #f7e184;
+
+$color-black: #000;
+$color-white: #fff;
+
+$color-grey: #e5e5e5;
+$color-grey-2: #eee;
+$color-grey-dark: #464646;
+$color-grey-dark-2: #dbdbdb;
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.content-wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+}

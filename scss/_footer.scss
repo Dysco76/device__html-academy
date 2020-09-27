@@ -1,0 +1,127 @@
+.footer {
+  background-color: $color-grey-dark;
+
+  &__container {
+    padding: 51px 0 64px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 33px;
+  }
+
+  &__mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-color: $color-primary;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 80px;
+      height: 7px;
+      margin-top: -3.5px;
+    }
+  }
+
+  &__logo {
+    padding-top: 10px;
+  }
+
+  &__logo-link {
+    &:hover,
+    &:focus {
+      outline: none;
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__user-nav {
+    .user-nav__list-item {
+      margin-right: 42px;
+
+      &--login {
+        margin-right: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .user-nav__link {
+      color: $color-white;
+      &--login {
+        background-image: url(../img/user-icon-primary.png);
+      }
+
+      &--compare {
+        background-image: url(../img/compare-icon-primary.png);
+      }
+
+      &--cart {
+        background-image: url(../img/cart-icon-primary.png);
+      }
+    }
+  }
+
+  &__paragraph {
+    letter-spacing: 0;
+    align-self: flex-start;
+    line-height: 15px;
+  }
+
+  &__site-nav {
+    margin-right: 38px;
+
+    .site-nav__list {
+      justify-content: flex-start;
+    }
+
+    .site-nav__list-item {
+      &:not(:last-child) {
+        margin-right: 34px;
+      }
+    }
+
+    .site-nav__link {
+      padding: 0;
+    }
+  }
+
+  &__social-list {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.html-logo {
+  &__wrap {
+    &:hover,
+    &:focus {
+      outline: none;
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
